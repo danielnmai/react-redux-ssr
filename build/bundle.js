@@ -22139,7 +22139,18 @@ var Home = function Home() {
     return _react2.default.createElement(
         'div',
         null,
-        'I\'m the Best home component'
+        _react2.default.createElement(
+            'div',
+            { onClick: true },
+            'I\'m the Best home component'
+        ),
+        _react2.default.createElement(
+            'button',
+            { onClick: function onClick() {
+                    return console.log('Button is clicked!');
+                } },
+            ' Click me '
+        )
     );
 };
 
